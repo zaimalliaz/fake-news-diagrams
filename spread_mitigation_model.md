@@ -1,11 +1,13 @@
 
----
-
-### `spread_mitigation_model.md`
-```markdown
 ```mermaid
 flowchart TD
-  A[Data Collection & Awareness] --> B[Risk Assessment & Strategy Formulation]
-  B --> C[Detection & Classification]
-  C --> D[Verification & Fact Checking]
-  D --> E[Enforcement & Mitigation]
+  A[Data Collection & Awareness]
+  B[Risk Assessment & Strategy Formulation]
+  C[Detection & Classification]
+  D[Verification & Fact Checking]
+  E[Enforcement & Mitigation]
+
+  A --> B
+  B --> C
+  C --> D
+  D --> E
