@@ -5,7 +5,7 @@ influence_as_capability.md             – Zaim Alliaz
 multi_layered_fortress_defence.md      – Enes Surmeli 
 
 literature_reference_flow.md           – Harrison Tod  
-feedback_loops_thematic_alignment.md   – Harrison Tod 
+feedback_loops_thematic_alignment.md   – Collin Lu
 
 negotiating_disagreement.md            – Raj Jallu  
 
