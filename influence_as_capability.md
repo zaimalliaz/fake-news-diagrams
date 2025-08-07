@@ -3,26 +3,29 @@
 ```mermaid
 flowchart TD
 
-  subgraph MC [Monitoring & Correction]
+  %% Monitoring & Correction Group
+  subgraph MC[Monitoring & Correction]
     A1[Monitoring]
     A2[Correction]
     A3[Update Rules]
   end
 
-  subgraph AI [Adaptation & Information]
+  %% Adaptation & Information Group
+  subgraph AI[Adaptation & Information]
     B1[Adaptation]
     B2[Collective Information]
     B3[Defined Structures]
   end
 
-  subgraph PD [Processing & Dissemination]
+  %% Processing & Dissemination Group
+  subgraph PD[Processing & Dissemination]
     C1[Processing Input]
     C2[Filter]
     C3[Verification]
     C4[Dissemination]
   end
 
-  %% Flow connections
+  %% Arrows connecting everything
   A1 --> A2
   A2 --> A3
   A3 --> B1
