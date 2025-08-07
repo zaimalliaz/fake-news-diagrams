@@ -1,7 +1,7 @@
 
 ---
 
-### `combatting_fake_news_strategy.md`
+### `pg.22 combatting_fake_news_strategy.md`
 ```markdown
 ```mermaid
 flowchart TD
