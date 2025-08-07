@@ -1,7 +1,27 @@
 # fake-news-diagrams
-Group project on fake news mitigation frameworks
+# Group project on fake news mitigation frameworks
+influence_as_capability.md             – Zaim Alliaz
+
+multi_layered_fortress_defence.md      – Enes Surmeli 
+
+literature_reference_flow.md           – Harrison Tod  
+feedback_loops_thematic_alignment.md   – Harrison Tod 
+
+negotiating_disagreement.md            – Raj Jallu  
+
+institutionalised_response_capacity.md – Sujan Dhakal  
+onto_epistemic_objects.md              – Sujan Dhakal 
+
+spread_mitigation_model.md             – Dibas Raj Sapkota
+
+scaled_collaboration_impact.md         – Rujohn Shakya
+
+spheres_of_influence.md                – Hardial Singh  
+combatting_fake_news_strategy.md       – Hardial Singh
 
 
+
+# Diagram References to page numbers on sheet
 influence_as_capability.md
 → Page 11
 → Author’s elaboration of Influence as Capability
