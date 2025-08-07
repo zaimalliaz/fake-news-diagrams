@@ -1,6 +1,6 @@
-# 🌐 Spheres of Influence Diagram
+# 🌐 Combatting fake news strategy
 
-This Mermaid diagram illustrates the flow of global to local influence in policy and detection systems.
+
 
 ```mermaid
 flowchart TD
