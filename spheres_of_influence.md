@@ -1,8 +1,7 @@
+# 🌐 Spheres of Influence Diagram
 
----
+This Mermaid diagram illustrates the flow of global to local influence in policy and detection systems.
 
-### `spheres_of_influence.md`
-```markdown
 ```mermaid
 flowchart TD
   A[International Standards] --> B[Cross-border Collaboration]
