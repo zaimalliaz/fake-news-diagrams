@@ -41,5 +41,12 @@ flowchart TD
   ET -->|Informs| RF
   TM -->|Refines| FD
 
-  %% Other Connections
-  
+  %% 🎨 Style Definitions
+  classDef macro fill:#1f77b4,color:#fff,stroke:#333,stroke-width:1px;   %% Blue
+  classDef socio fill:#2ca02c,color:#fff,stroke:#333,stroke-width:1px;   %% Green
+  classDef micro fill:#d62728,color:#fff,stroke:#333,stroke-width:1px;   %% Red
+
+  %% Apply styles
+  class SF,AM,ID,SP macro;
+  class RC,AM2,TM socio;
+  class ET,FD,PM,RF micro;
