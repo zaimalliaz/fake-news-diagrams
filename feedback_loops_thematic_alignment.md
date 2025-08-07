@@ -9,6 +9,7 @@ config:
 
 flowchart TB
 
+  %%FakeNewsSource-level
  subgraph FakeNewsSources["Fake News Sources"]
         A1[/"Social Media
           Cross-Border Collaboration
@@ -44,12 +45,11 @@ Disinformation -- Appears Credible --> Feedback
 FakeNewsSources -- Leads to --> Disinformation
  Feedback -- Facilitates --> Disinformation
 
-    style A1 fill:#FFCDD2,stroke:#D50000
-    style B1 fill:#BBDEFB,stroke:#2962FF
-    style B2 fill:#BBDEFB,stroke:#2962FF
-    style C1 stroke:#FF6D00,fill:#FFE0B2
-    style C2 stroke:#FF6D00,fill:#FFE0B2
-    style D1 stroke:none
-    style FakeNewsSources stroke:none
-    style Misinformation fill:#BBDEFB,stroke:#2962FF
-    style Disinformation fill:#FFE0B2,stroke:#FF6D00
+  classDef Red fill:#d62728,color:#fff,stroke:#333,stroke-width:1px;
+  classDef Blue fill:#1f77b4,color:#fff,stroke:#333,stroke-width:1px;   
+  classDef Orange fill:#ff7f50,color:#fff,stroke:#333,stroke-width:1px;   
+
+  class A1 Red;
+  class B1,B2,Misinformation Blue;
+  class C1,C2,Disinformation Orange;
+  
