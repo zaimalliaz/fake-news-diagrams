@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Spread Mitigation Model</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pyramid-container {
+            position: relative;
+            width: 800px;
+            height: 600px;
+        }
+
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 400px solid transparent;
+            border-right: 400px solid transparent;
+            border-bottom: 600px solid #f0f0f0;
+            position: relative;
+            filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+        }
+
+        .level {
+            position: absolute;
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .level:hover {
+            transform: scale(1.05);
+        }
+
+        .connector {
+            position: absolute;
+            text-align: center;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-style: italic;
+            font-size: 12px;
+            background: #E8E8E8;
+            border: 1px solid #999;
+            color: #333;
+        }
+
+        /* Level 1 - Top */
+        .level1 {
+            background: #5B9BD5;
+            color: white;
+            left: 50%;
+            top: 20px;
+            transform: translateX(-50%);
+            font-size: 16px;
+            width: 200px;
+        }
+
+        /* Connector 1 */
+        .conn1 {
+            left: 50%;
+            top: 80px;
+            transform: translateX(-50%);
+        }
+
+        /* Level 2 */
+        .level2 {
+            background: #F4A460;
+            color: black;
+            left: 50%;
+            top: 130px;
+            transform: translateX(-50%);
+            font-size: 15px;
+            width: 250px;
+        }
+
+        /* Connector 2 */
+        .conn2 {
+            left: 50%;
+            top: 190px;
+            transform: translateX(-50%);
+        }
+
+        /* Level 3 */
+        .level3 {
+            background: #DEB887;
+            color: black;
+            left: 50%;
+            top: 240px;
+            transform: translateX(-50%);
+            font-size: 14px;
+            width: 300px;
+        }
+
+        /* Connector 3 */
+        .conn3 {
+            left: 50%;
+            top: 300px;
+            transform: translateX(-50%);
+        }
+
+        /* Level 4 */
+        .level4 {
+            background: #90EE90;
+            color: black;
+            left: 50%;
+            top: 350px;
+            transform: translateX(-50%);
+            font-size: 14px;
+            width: 350px;
+        }
+
+        /* Connector 4 */
+        .conn4 {
+            left: 50%;
+            top: 410px;
+            transform: translateX(-50%);
+        }
+
+        /* Level 5 - Bottom */
+        .level5 {
+            background: #FFB6C1;
+            color: black;
+            left: 50%;
+            top: 460px;
+            transform: translateX(-50%);
+            font-size: 14px;
+            width: 400px;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .variance-label {
+            position: absolute;
+            bottom: -50px;
+            left: -50px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #666;
+            transform: rotate(-15deg);
+        }
+
+        /* Arrow for variance */
+        .variance-arrow {
+            position: absolute;
+            bottom: -30px;
+            left: -80px;
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-right: 20px solid #666;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="title">Fake News Spread Mitigation Model</div>
+        
+        <div class="pyramid-container">
+            <div class="triangle"></div>
+            
+            <div class="level level1">
+                Enforcement & Mitigation
+            </div>
+            
+            <div class="connector conn1">
+                Enables
+            </div>
+            
+            <div class="level level2">
+                Verification & Fact Checking
+            </div>
+            
+            <div class="connector conn2">
+                Determines
+            </div>
+            
+            <div class="level level3">
+                Detection & Classification
+            </div>
+            
+            <div class="connector conn3">
+                Facilitates
+            </div>
+            
+            <div class="level level4">
+                Risk Assessment & Strategy Formulation
+            </div>
+            
+            <div class="connector conn4">
+                Empowered by
+            </div>
+            
+            <div class="level level5">
+                Data Collection & Awareness
+            </div>
+            
+            <div class="variance-label">Variance</div>
+            <div class="variance-arrow"></div>
+        </div>
+    </div>
+</body>
+</html>
