@@ -1,4 +1,4 @@
-# Zaim Alliaz – Capability Feedback Loop
+# Zaim Alliaz and Collin Lu – Capability Feedback Loop
 
 ```mermaid
 flowchart TD
