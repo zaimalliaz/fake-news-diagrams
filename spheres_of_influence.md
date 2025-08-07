@@ -14,18 +14,17 @@ flowchart TD
   end
 
   SF -->|Defines| SP
-  AM -->|Updates| SP
-  ID -->|Controls| RF[Resource Flow]
+  AM -->|Updates| RC
 
   %% Socio-Level
   subgraph Socio-Level Components
-    RC[Relationship Chain]
+    RC[Relationship Chart]
     AM2[Activity Model]
     TM[Translation Matrix]
   end
 
   AM -->|Drives| RC
-  RC <--> AM2
+  RC --> AM2
   RC -->|Validates| TM
   AM2 -->|Maps To| TM
 
@@ -34,11 +33,13 @@ flowchart TD
     ET[Event Trace]
     FD[Functionality Description]
     PM[Policy Model]
+    RF[Resource Flow]
   end
 
   SP -->|Guides| RF
-  ET -->|Informs| FD
-  FD -->|Refines| PM
+  ID -->|Controls| RF
+  ET -->|Informs| RF
+  TM -->|Refines| FD
 
   %% Other Connections
-  SP -->|Guides| ET
+  
