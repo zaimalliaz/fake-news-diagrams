@@ -1,4 +1,4 @@
-```mermaid
+```pg.11 mermaid
 flowchart TD
   A[Monitoring] --> B[Correction]
   B --> C[Update Rules]
