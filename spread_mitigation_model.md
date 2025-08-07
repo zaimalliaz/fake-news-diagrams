@@ -1,32 +1,23 @@
 
 ```mermaid
-graph TD
-  subgraph Layer1["Data Collection & Awareness"]
-    A1[Data Collection & Awareness]
-  end
 
-  subgraph Layer2["Risk Assessment & Strategy Formulation"]
-    B1[Risk Assessment & Strategy Formulation]
-  end
-
-  subgraph Layer3["Detection & Classification"]
-    C1[Detection & Classification]
-  end
-
-  subgraph Layer4["Verification & Fact Checking"]
-    D1[Verification & Fact Checking]
-  end
-
-  subgraph Layer5["Enforcement & Mitigation"]
-    E1[Enforcement & Mitigation]
-  end
-
-  %% Draw hierarchy bottom -> top
-  A1 -->|Empowers| B1
-  B1 -->|Facilitates| C1
-  C1 -->|Determines| D1
-  D1 -->|Enables| E1
-
-  %% Add optional label for time variance (represented along layers)
-  subgraph TimeVariance["Time Variance (across layers)"]
-  end
+flowchart TD
+    %% Top layer
+    A["Enforcement & Mitigation"]
+    %% Layer 4
+    B["Verification & Fact Checking"]
+    %% Layer 3
+    C["Detection & Classification"]
+    %% Layer 2
+    D["Risk Assessment & Strategy Formulation"]
+    %% Bottom layer (base of the pyramid)
+    E["Data Collection & Awareness"]
+    
+    %% Connections top to bottom
+    A -->|Enables| B
+    B -->|Determines| C
+    C -->|Facilitates| D
+    D -->|Empowered by| E
+    
+    %% Time Variance positioned separately
+    TV["Time Variance"]
