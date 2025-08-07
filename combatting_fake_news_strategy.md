@@ -12,16 +12,16 @@ flowchart TD
   TM[Traceability Matrix]
   FE[Forecast Evolution]
 
-  %% Mid-Level Element (Core Context)
-  MLC[Macro-Level Context]
+  
 
   %% Bottom-Level Elements (Core Components)
+  MLC[Macro-Level Context]
   FR[Functionality Requirements]
   CAP[Capabilities]
   OS[Operational Scenarios]
 
   %% Grouping (optional, visual clarity)
-  subgraph Top-Level Elements
+  subgraph Key Relationships
     ST
     ET
     RM
@@ -30,6 +30,7 @@ flowchart TD
   end
 
   subgraph Core Components
+    MLC
     FR
     CAP
     OS
@@ -40,7 +41,7 @@ flowchart TD
   ET -->|Informs| MLC
   RM -->|Supports| MLC
   MLC -->|Influences| FR
-  MLC -->|Context for| CAP
+  MLC -->|Context for| OS
   TM -->|Maps to| CAP
   FE -->|Guides| CAP
   CAP -->|Enables| OS
